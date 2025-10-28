@@ -1,0 +1,190 @@
+th {
+  border: 2px solid pink;
+  background-color: pink;
+  color: plum;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 10px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+th:nth-child(3){
+    text-align: center;
+ }
+
+td:nth-child(3) {
+  text-align: center;
+}
+
+th:nth-child(4){
+    text-align: center;
+}
+
+td:nth-child(4) {
+  text-align: center;
+}
+th:nth-child(6){
+    width: 130px;
+    text-align: left;
+}
+th:nth-child(1){
+    width: 150px;
+    text-align: left;
+}
+th:nth-child(2){
+    width: 80px;
+}
+th:nth-child(7){
+    width: 50px;
+    text-align: right;
+    padding-right: 2.5px;
+}
+th:nth-child(8){
+    text-align:center;
+}
+
+td:nth-child(8){
+    text-align: center;
+    vertical-align: top;
+   
+}
+
+
+td h5 {
+  margin: 0;
+}
+
+.user-cell{
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 10px;
+    border-radius: 50%;
+}
+.user-cell img{
+    width: 10px;
+    height: 10px;
+}
+
+.user-text h5{
+ margin: 0;
+}
+
+.user-text small{
+    display: block; 
+  color: #888888;
+  margin-top: 2px;
+  font-size: 0.6em;
+} 
+.status div {
+  display: flex;          
+  align-items: center;    
+  gap: 6px;               
+  font-weight: bold;
+  font-size: 0.7em;
+  color: darkgreen;
+}
+
+
+.circle{
+    width: 10px;
+  height: 10px;
+  border-radius: 50%;      
+  background-color: green; 
+  flex-shrink: 0;
+}
+.circle.approved {
+  background-color: #4CAF50; 
+}
+.circle.awaiting{
+    background-color: orange;
+    
+}
+
+.awaiting-text{
+    color:orange;
+}
+.Nostatus-text{
+    color: gray;
+}
+.circle.Nostatus{
+    background:  gray;
+}
+.circle.rejected{
+    background-color: red;
+}
+.rejected{
+    color: red;
+}
+.circle.processing{
+    background-color: #888888;
+}
+.processing{
+    color: #888888;
+}
+.join{
+    color: #888888;
+    font-size: 0.7em;
+}
+.size{
+    color: #888888;
+    font-size: 0.9em;
+}
+.location{
+    color: #888888;
+    font-size: 0.7em;
+}
+
+.use-contract{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.use-contract img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.contract h5{
+    margin:0;
+    font-size: 0.75em;
+}
+.contract small{
+    display: block;
+    color: #888888;
+    top-margin: 2px;
+    font-size: 0.55em;
+}
+
+.use-bill{
+    text-align: right;
+    font-size: 0.7em;
+    vertical-align: top;
+    padding-top: 4px;
+}
+.bill{
+    text-align: right;
+    font-size: 0.8em;
+    color: #888888;
+}
+
+.edit img{
+
+    width: 15px;
+    height: 15px;
+    color: #888888;
+    display: inline;
+    padding-top: 7px;
+   
+    
+}
+
+.nonedit img{
+    width: 15px;
+    height: 15px;
+    display: inline;
+    padding-top: 6px;
+}
+
