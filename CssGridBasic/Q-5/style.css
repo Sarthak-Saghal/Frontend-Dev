@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  padding: 3rem 1rem;
+}
+
+.pricing-section {
+  text-align: center;
+}
+.pricing-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  max-width: 320px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.plan h2 {
+  font-size: 1.5rem;
+  color: #004b8d;
+  margin-bottom: 1.2rem;
+}
+.plan ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+.plan ul li {
+  margin: 0.6rem 0;
+  font-size: 0.95rem;
+}
+.plan .price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1.2rem;
+}
+.plan .price span {
+  font-size: 0.9rem;
+  color: #666;
+}
+.plan a {
+  display: inline-block;
+  text-decoration: none;
+  background: #004b8d;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+.plan a:hover {
+  background: #003870;
+}
+.plan:hover {
+  transform: scale(1.05);
+  background: #eef4fb;
+  border-color: #004b8d;
+}
+
+.popular {
+  border: 2px solid #ff9800;
+  background: #fffaf0;
+  position: relative;
+}
+.popular::before {
+  content: "Most Popular";
+  position: absolute;
+  top: -12px;
+  right: 15px;
+  background: #ff9800;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+.popular a {
+  background: #ff9800;
+}
+.popular a:hover {
+  background: #e68900;
+}/*# sourceMappingURL=style.css.map */

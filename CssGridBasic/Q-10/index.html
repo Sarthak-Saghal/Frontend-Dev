@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Webpage Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h1 class="logo">BoxModel<span>Pro</span></h1>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <h2>Welcome to BoxModel Pro</h2>
+        <p>Mastering layout, spacing, and positioning in pure CSS.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          We create beautiful, responsive layouts using modern CSS techniques.
+          Our mission is to demonstrate perfect alignment, balance, and design
+          flow using the box model and positioning.
+        </p>
+      </div>
+      <div class="about-img">
+        <img
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+          alt="About Design"
+        />
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Web Design</h3>
+          <p>Clean, minimal, and responsive web design layouts.</p>
+        </div>
+        <div class="service-card">
+          <h3>UI/UX</h3>
+          <p>Intuitive and user-centered interface experiences.</p>
+        </div>
+        <div class="service-card">
+          <h3>Development</h3>
+          <p>High-quality front-end code built with precision.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 BoxModelPro. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

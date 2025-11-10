@@ -1,0 +1,51 @@
+$bg: #f4f1ee;
+$text: #222;
+$accent: #a61e1e;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg;
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.6;
+  color: $text;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.newspaper {
+  background: white;
+  padding: 2rem;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  column-count: 3;
+  column-gap: 2rem;
+  text-align: justify;
+
+  .headline {
+    column-span: all;
+    text-align: center;
+    font-size: 2rem;
+    color: $accent;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  .article-img {
+    float: left;
+    width: 40%;
+    margin: 0 1rem 1rem 0;
+    border-radius: 6px;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}

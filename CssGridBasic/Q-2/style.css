@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #0b0f12;
+  scroll-behavior: smooth;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+.site-header .logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #0b0f12;
+}
+.site-header ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.site-header ul a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.site-header ul a:hover {
+  color: #e63946;
+}
+
+main {
+  margin-top: 4rem;
+}
+
+.panel {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8vh 8%;
+  color: #fff;
+}
+.panel .content {
+  max-width: 600px;
+}
+.panel h1,
+.panel h2 {
+  margin-bottom: 1rem;
+}
+.panel p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.panelhero {
+  background: url("https://i.pinimg.com/1200x/1c/32/1f/1c321f1ec3970e87d11317f5f78566d2.jpg") center/cover fixed;
+}
+.panelhero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.panelculture {
+  background: radial-gradient(circle at top left, #b96600, #5f3c00);
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.panelculture h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  color: #eee;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=style.css.map */

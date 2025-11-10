@@ -1,0 +1,90 @@
+$header-bg: #1e1e2f;
+$sidebar-bg: #2c2c3e;
+$content-bg: #f5f5f7;
+$text-light: #fff;
+$text-dark: #333;
+$card-bg: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: $content-bg;
+  color: $text-dark;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $header-bg;
+  color: $text-light;
+  text-align: center;
+  padding: 1rem;
+  z-index: 100;
+}
+
+.dashboard {
+  display: flex;
+  margin-top: 70px;
+  height: calc(100vh - 70px);
+}
+
+.sidebar {
+  width: 220px;
+  background: $sidebar-bg;
+  color: $text-light;
+  height: 100%;
+  padding: 1.5rem 1rem;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  ul {
+    list-style: none;
+    li {
+      margin: 1rem 0;
+
+      a {
+        color: $text-light;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+
+        &:hover {
+          color: lighten($text-light, 20%);
+        }
+      }
+    }
+  }
+}
+
+.content {
+  margin-left: 220px;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background: $content-bg;
+  overflow-y: auto;
+  height: calc(100vh - 70px);
+
+  .card {
+    background: $card-bg;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    flex: 1 1 45%;
+    min-width: 280px;
+  }
+}
