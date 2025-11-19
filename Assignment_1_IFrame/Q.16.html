@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URI Encoding</title>
+  </head>
+  <body>
+    <p>
+      Original URL with special characters:
+      <code>https://example.com/search?query=HTML & CSS</code>
+    </p>
+    <p>
+      Correct encoded URL:
+      <a
+        href="https://example.com/search?query=HTML%20%26%20CSS"
+        target="_blank"
+      >
+        https://example.com/search?query=HTML%20%26%20CSS
+      </a>
+    </p>
+    <p>
+      Explanation: - Spaces are encoded as <code>%20</code><br />
+      - Ampersand (&) is encoded as <code>%26</code>
+    </p>
+  </body>
+</html>

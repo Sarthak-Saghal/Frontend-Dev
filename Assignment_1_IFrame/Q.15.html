@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <form action="#">
+      <label for="cardholder">Cardholder Name:</label><br />
+      <input
+        type="text"
+        id="cardholder"
+        name="cardholder"
+        placeholder="Enter your name"
+        required
+      /><br /><br />
+
+      <label for="cardnumber">Card Number:</label><br />
+      <input
+        type="text"
+        id="cardnumber"
+        name="cardnumber"
+        placeholder="XXXX-XXXX-XXXX-XXXX"
+        required
+        pattern="\d{16}"
+        title="Enter 16-digit card number"
+      /><br /><br />
+
+      <label for="expiry">Expiry Date:</label><br />
+      <input type="month" id="expiry" name="expiry" required /><br /><br />
+
+      <label for="cvv">CVV:</label><br />
+      <input
+        type="password"
+        id="cvv"
+        name="cvv"
+        placeholder="XXX"
+        required
+        pattern="\d{3}"
+        title="Enter 3-digit CVV"
+      /><br /><br />
+
+      <input type="submit" value="Pay Now" />
+    </form>
+  </body>
+</html>
