@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Path & Coordinates Logger</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+        background-color: #f0f4f8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        max-width: 700px;
+        width: 100%;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #1e293b;
+        margin-bottom: 15px;
+      }
+      #coords-display {
+        font-size: 18px;
+        font-weight: 600;
+        color: #3b82f6;
+        margin-bottom: 15px;
+        min-height: 25px;
+      }
+      #tracking-box {
+        width: 400px;
+        height: 400px;
+        background-color: #e0f2f1;
+        border: 3px dashed #00796b;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+        cursor: crosshair;
+      }
+      .dot {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #dc2626;
+        border-radius: 50%;
+        transform: translate(
+          -50%,
+          -50%
+        ); 
+        box-shadow: 0 0 5px rgba(220, 38, 38, 0.8);
+        pointer-events: none; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🖱️ Mouse Tracker</h1>
+      <div id="coords-display">Move your mouse inside the box...</div>
+      <div id="tracking-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

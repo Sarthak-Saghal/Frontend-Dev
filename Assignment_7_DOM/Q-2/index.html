@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Character Counter</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #e2e8f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 500px;
+        width: 100%;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #1e293b;
+        margin-bottom: 25px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+      #text-input {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #cbd5e1;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        resize: none;
+        transition: border-color 0.2s ease;
+      }
+      #text-input:focus {
+        outline: none;
+        border-color: #3b82f6;
+      }
+      .controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+      }
+      #reset-btn {
+        padding: 10px 20px;
+        background-color: #ef4444;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        transition: background-color 0.2s ease, transform 0.1s ease;
+      }
+      #reset-btn:hover {
+        background-color: #dc2626;
+      }
+      #reset-btn:active {
+        transform: scale(0.98);
+      }
+      #counter {
+        font-size: 20px;
+        font-weight: 700;
+        min-width: 30px;
+        text-align: right;
+        transition: color 0.3s ease;
+      }
+      .counter-green {
+        color: #16a34a;
+      }
+      .counter-yellow {
+        color: #fbbf24;
+      }
+      .counter-red {
+        color: #dc2626;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>📝 Character Counter</h1>
+
+      <textarea
+        id="text-input"
+        rows="6"
+        placeholder="Start typing your message (max 100 characters)..."
+      ></textarea>
+
+      <div class="controls">
+        <button id="reset-btn">Reset</button>
+        <div id="counter" class="counter-green">100</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

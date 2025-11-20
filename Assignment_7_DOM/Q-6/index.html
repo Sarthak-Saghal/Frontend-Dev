@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-Time Table Filter</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+        background-color: #f8f9fa;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #343a40;
+        margin-bottom: 25px;
+      }
+      #search-input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 2px solid #ced4da;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 16px;
+        transition: border-color 0.2s;
+      }
+      #search-input:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+      th,
+      td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #dee2e6;
+      }
+      th {
+        background-color: #007bff;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      tr:hover:not(.no-results-row) {
+        background-color: #e9ecef;
+      }
+      .no-results-row td {
+        text-align: center;
+        font-style: italic;
+        color: #6c757d;
+        background-color: #fff3cd;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>📊 Student Table Filter</h1>
+
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search by Name or Branch..."
+      />
+
+      <table id="student-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>CGPA</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <tr>
+            <td>Alice Johnson</td>
+            <td>Computer Science</td>
+            <td>9.1</td>
+          </tr>
+          <tr>
+            <td>Bob Williams</td>
+            <td>Electronics</td>
+            <td>8.5</td>
+          </tr>
+          <tr>
+            <td>Charlie Brown</td>
+            <td>Mechanical</td>
+            <td>7.8</td>
+          </tr>
+          <tr>
+            <td>Diana Prince</td>
+            <td>Computer Science</td>
+            <td>9.5</td>
+          </tr>
+          <tr>
+            <td>Ethan Hunt</td>
+            <td>Civil</td>
+            <td>8.2</td>
+          </tr>
+          <tr>
+            <td>Fiona Glenn</td>
+            <td>Electronics</td>
+            <td>7.9</td>
+          </tr>
+
+          <tr id="no-results" class="no-results-row hidden">
+            <td colspan="3">No results found</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

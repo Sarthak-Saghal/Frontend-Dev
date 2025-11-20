@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Dropdown</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+        background-color: #f7f9fc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .dropdown-wrapper {
+        position: relative;
+        width: 250px;
+      }
+      #dropdown-button {
+        width: 100%;
+        padding: 12px 15px;
+        background-color: #3b82f6;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        text-align: left;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.2s;
+      }
+      #dropdown-button:hover {
+        background-color: #2563eb;
+      }
+      .arrow-icon {
+        margin-left: 10px;
+        transition: transform 0.3s;
+      }
+      .dropdown-menu {
+        position: absolute;
+        top: 100%; /* Position right below the button */
+        left: 0;
+        width: 100%;
+        background: white;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        margin-top: 5px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, border 0.3s;
+        z-index: 10;
+      }
+      .dropdown-menu.open {
+        max-height: 200px; /* Large enough value to show content */
+        border: 1px solid #3b82f6;
+      }
+      .dropdown-menu.open + #dropdown-button .arrow-icon {
+        transform: rotate(180deg);
+      }
+      .dropdown-menu li {
+        padding: 10px 15px;
+        cursor: pointer;
+        color: #1f2937;
+        font-size: 15px;
+        transition: background-color 0.15s;
+      }
+      .dropdown-menu li:hover {
+        background-color: #e5e7eb;
+      }
+      .dropdown-menu li:last-child {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown-wrapper">
+      <button
+        id="dropdown-button"
+        aria-expanded="false"
+        aria-controls="dropdown-options"
+      >
+        Select an Option
+        <span class="arrow-icon">&#9660;</span>
+      </button>
+
+      <ul id="dropdown-options" class="dropdown-menu">
+        <li data-value="option1">Option One</li>
+        <li data-value="option2">Option Two (Default)</li>
+        <li data-value="option3">Option Three</li>
+        <li data-value="option4">Option Four</li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
